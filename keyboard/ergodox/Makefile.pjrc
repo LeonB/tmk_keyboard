@@ -115,4 +115,5 @@ micro: all
 cub: OPT_DEFS += -DKEYMAP_CUB
 cub: all
 
-
+leonb: OPT_DEFS += -DKEYMAP_LEONB
+leonb: all

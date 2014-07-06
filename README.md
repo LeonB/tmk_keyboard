@@ -44,6 +44,7 @@ You can find some keyboard specific projects under `converter` and `keyboard` di
 * [ibm4704_usb](converter/ibm4704_usb)      - [IBM 4704 keyboard Converter][GH_ibm4704]
 
 ### keyboard
+* [ergodox](keyboard/ergodox/)              - [Ergodox][Ergodox]
 * [hhkb](keyboard/hhkb/)                    - [Happy Hacking Keyboard pro][GH_hhkb] **my main board**
 * [gh60](keyboard/gh60/)                    - [GH60] DIY 60% keyboard [prototype][GH60_proto] **my second board**
 * [hbkb](keyboard/hbkb/)                    - [Happy Buckling spring keyboard][GH_hbkb](IBM Model M 60% mod)
@@ -55,6 +56,7 @@ You can find some keyboard specific projects under `converter` and `keyboard` di
 * [Lightsaber](keyboard/lightsaber/)        - Korean custom keyboard
 * [ErgoDox](keyboard/ergodox/)              - [ergonomic keyboard with split design][GH_ergodox] (see [Ergodox-FAQ.md](keyboard/ergodox/Ergodox-FAQ.md))
 
+[Ergodox]:      http://geekhack.org/index.php?topic=48106.0
 [GH_macway]:    http://geekhack.org/showwiki.php?title=Island:11930
 [GH_hhkb]:      http://geekhack.org/showwiki.php?title=Island:12047
 [GH_ps2]:       http://geekhack.org/showwiki.php?title=Island:14618
