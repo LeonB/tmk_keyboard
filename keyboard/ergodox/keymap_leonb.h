@@ -32,19 +32,23 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *
      ****************************************************************************************************
      *
+     * HOW TO DEBUG:
+     *
+     * sudo ./hid-listen
+     * (see: https://www.pjrc.com/teensy/hid_listen.html)
+     *
+     ****************************************************************************************************
+     *
      * Test:
      * - Alt + F4
      * - Ctrl + Gui + Up
      * - Ctrl + Alt + Shift + Lft/Rght
      *
-     * For such cases I have Layer1 :)
-     * // hint: switch to Layer1 is only at Layer6
-     *
      ****************************************************************************************************
      *
      */
 
-    KEYMAP(  // Layer0: default, leftled:none
+    KEYMAP(  // Layer0: default, leftled:none, rightled: none
         // left hand
         GRV, 1,   2,   3,   4,   5,   NO,
         TAB, Q,   W,   E,   R,   T,   NO,
@@ -65,7 +69,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         NO,  ENT, SPC
     ),
 
-    KEYMAP(  // Layer1: default, leftled:all
+    KEYMAP(  // Layer1: default, leftled:none, rightled: 1
         // left hand
         FN0, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
