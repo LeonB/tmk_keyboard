@@ -32,6 +32,14 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *
      ****************************************************************************************************
      *
+     * PULL FROM UPSTREAM
+     *
+     * git remote add upstream https://github.com/cub-uanic/tmk_keyboard
+     * git fetch
+     * git branch -u upstream/cub_layout cub_layout
+     *
+     ****************************************************************************************************
+     *
      * HOW TO DEBUG:
      *
      * sudo ./hid-listen
@@ -41,8 +49,9 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *
      * Test:
      * - Alt + F4
-     * - Ctrl + Gui + Up
-     * - Ctrl + Alt + Shift + Lft/Rght
+     * - Ctrl/Gui + Up
+     * - Ctrl/Alt/Shift + Lft/Rght
+     * - RAlt/Shift/",e (should output ë)
      *
      ****************************************************************************************************
      *
