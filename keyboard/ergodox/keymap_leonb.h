@@ -110,9 +110,9 @@ enum function_id {
  * Fn action definition
  */
 static const uint16_t PROGMEM fn_actions[] = {
-    [0] =   ACTION_FUNCTION(TEENSY_KEY),                 // FN0  - Teensy key
-    [1] =   ACTION_FUNCTION_TAP(CUSTOM_LAYER_TAP_TOGGLE), // FN1  - Teensy key
-    [2] =   ACTION_MODS_TAP_KEY(MOD_LCTL, KC_ESC),       // FN2  = LCtrl with tap Escape
+    [0] =   ACTION_FUNCTION(TEENSY_KEY),                  // FN0  = Teensy key
+    [1] =   ACTION_FUNCTION_TAP(CUSTOM_LAYER_TAP_TOGGLE), // FN1  = Teensy key
+    [2] =   ACTION_MODS_TAP_KEY(MOD_LCTL, KC_ESC),        // FN2  = LCtrl with tap Escape
 };
 
 /*
@@ -134,20 +134,17 @@ void action_function(keyrecord_t *record, uint8_t id, uint8_t opt)
             break;
 
         case CUSTOM_LAYER_TAP_TOGGLE:
-            xprintf("\n\ntap.count: %d", record->tap.count);
-            xprintf("\n\nevent.pressed: %d", record->event.pressed);
-
             if (record->tap.count > 0) {
                 if (record->event.pressed) {
-                    print("\nlayer_invert");
+                    // Invert layer
                     layer_invert(1);
                 }
             } else {
                 if (record->event.pressed) {
-                    print("\nlayer_on");
+                    // Layer on
                     layer_on(1);
                 } else {
-                    print("\nlayer_off");
+                    // Layer off
                     layer_off(1);
                 }
             }
