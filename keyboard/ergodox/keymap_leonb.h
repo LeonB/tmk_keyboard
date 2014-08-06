@@ -25,6 +25,13 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *
      * Keymap: Layer 2
      *
+     * Functions:
+     *
+     * - Jump to Teensy bootloader
+     * - Function keys
+     * - Vi navigation keys
+     * - Browser navigation keys on a better place (space + shift-space)
+     *
      * ,--------------------------------------------------.           ,--------------------------------------------------.
      * |  `     |  1   |  2   |  3   |  4   |  5   |      |           |  -   |  6   |  7   |  8   |  9   |  0   |  =     |
      * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
@@ -53,6 +60,13 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *
      ****************************************************************************************************
      *
+     * UPLOAD TO TEENSY
+     *
+     * sudo teensy_loader_cli -mmcu=atmega32u4 -w ergodox_lufa.hex
+     * (see: https://www.pjrc.com/teensy/loader_cli.html)
+     *
+     ****************************************************************************************************
+     *
      * PULL FROM UPSTREAM
      *
      * git remote add upstream https://github.com/cub-uanic/tmk_keyboard
@@ -63,7 +77,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *
      * HOW TO DEBUG:
      *
-     * sudo ./hid-listen
+     * sudo hid-listen
      * (see: https://www.pjrc.com/teensy/hid_listen.html)
      *
      ****************************************************************************************************
