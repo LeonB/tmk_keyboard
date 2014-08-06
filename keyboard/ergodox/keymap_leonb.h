@@ -147,6 +147,33 @@ void action_function(keyrecord_t *record, uint8_t id, uint8_t opt)
 }
 
 /*
+ * Custom matrix logic as used in matrix.c
+ */
+void custom_matrix_logic()
+{
+    uint8_t layer = biton32(layer_state);
+
+    ergodox_board_led_off();
+    ergodox_left_led_1_off();
+    ergodox_left_led_2_off();
+    ergodox_left_led_3_off();
+
+    ergodox_right_led_1_off();
+    ergodox_right_led_2_off();
+    ergodox_right_led_3_off();
+    switch (layer) {
+        case 1:
+            ergodox_right_led_1_on();
+            break;
+        default:
+            // none
+            break;
+    }
+
+    mcp23018_status = ergodox_left_leds_update();
+}
+
+/*
  * ACTION_MODS_TAP_KEY(MOD_RCTL, KC_ENT)
  * Works as a modifier key while holding, but registers a key on tap(press and
  * release quickly).
