@@ -72,6 +72,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * git remote add upstream https://github.com/cub-uanic/tmk_keyboard
      * git fetch
      * git branch -u upstream/cub_layout cub_layout
+     * git merge cub_layout (--rebase?)
      *
      ****************************************************************************************************
      *
