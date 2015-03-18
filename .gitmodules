@@ -4,3 +4,6 @@
 [submodule "protocol/usb_hid/USB_Host_Shield_2.0"]
 	path = protocol/usb_hid/USB_Host_Shield_2.0
 	url = https://github.com/felis/USB_Host_Shield_2.0.git
+[submodule "mbed-sdk"]
+	path = mbed-sdk
+	url = https://github.com/mbedmicro/mbed.git
