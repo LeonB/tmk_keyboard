@@ -6,7 +6,7 @@
  * HOW TO COMPILE:
  *
  * make KEYMAP=leonb
- * sudo make program KEYMAP=leonb
+ * sleep 5; sudo make program KEYMAP=leonb
  *
  ****************************************************************************************************
  *
@@ -17,6 +17,12 @@
  * git branch -u upstream/master master
  * git fetch upstream
  * git rebase upstream/master
+ *
+ ****************************************************************************************************
+ *
+ * NOTES
+ *
+ * Calculator & Volume keys don't work with the tmk firmware (yet)
  *
  ****************************************************************************************************
  */
@@ -66,7 +72,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * ,-----------------------------------------------------------.
      * |   | F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|   |   |
      * |-----------------------------------------------------------|
-     * |     |   | Up|   |   |   |   |   |   |   |Psc|Slk|Pus|  Del|
+     * |     |   | Up|   |   |   |Cal|   |Ins|   |Psc|Slk|Pus|  Del|
      * |-----------------------------------------------------------|
      * |      |Lef|Dow|Rig|   |   |   |   |   |   |Hom|PgU|        |
      * |-----------------------------------------------------------|
@@ -77,7 +83,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
     [2] =
     KEYMAP(TRNS,F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12 ,TRNS,TRNS, \
-           TRNS,TRNS,UP,  TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,PSCR,SLCK,PAUS,DEL,       \
+           TRNS,TRNS,UP,  TRNS,TRNS,TRNS,CALC,TRNS,INS, TRNS,PSCR,SLCK,PAUS,DEL,       \
            TRNS,LEFT,DOWN,RGHT,TRNS,TRNS,TRNS,TRNS,TRNS,HOME,PGUP,TRNS,TRNS,           \
            TRNS,TRNS,APP, TRNS,TRNS,TRNS,VOLD,VOLU,MUTE,END, PGDN,TRNS,TRNS,           \
            TRNS,TRNS,TRNS,          TRNS,               TRNS,TRNS,TRNS,TRNS),
