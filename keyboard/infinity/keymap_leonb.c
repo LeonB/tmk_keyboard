@@ -6,7 +6,7 @@
  * HOW TO COMPILE:
  *
  * make KEYMAP=leonb
- * sleep 5; sudo make program KEYMAP=leonb
+ * sudo sleep 5; sudo make program KEYMAP=leonb
  *
  ****************************************************************************************************
  *
